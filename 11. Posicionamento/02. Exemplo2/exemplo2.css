@@ -1,0 +1,93 @@
+/* #box1 {
+    border: solid black 1px;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    position: static;   empregar static ten o mesmo efecto que non empregar a propiedade position
+}
+#box2 {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    background-color: plum;  
+} */
+
+
+
+/* #box1 {
+    border: solid black 1px;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    position: absolute; O resto de eltos compórtanse como se box1 non existise. Non lle deixan espazo.
+    z-index: -1;
+}
+#box2 {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    background-color: plum;  
+} */
+
+
+
+/* #box1 {
+    border: solid black 1px;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    position: sticky;   sticky solo funciona conxuntamente coa propiedade top
+    top: 0px;
+}
+#box2 {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    background-color: plum;  
+} */
+
+
+
+/* #box1 {
+    border: solid black 1px;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    position: relative;   sitúase a unha distancia de 80px relativa o elto anterior
+    top: 80px;
+}
+#box2 {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    background-color: plum;  
+} */
+
+
+
+/* #box1 {
+    border: solid black 1px;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    position: fixed;   como absolute pero responde o scroll
+}
+#box2 {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    background-color: plum;  
+} */
+
+#box1 {
+    border: solid black 1px;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+}
+#box2 {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    background-color: plum;  
+}

@@ -1,0 +1,98 @@
+/*
+
+    SELECTORES
+
+    Os selectores son regras ou patróns que empregaremos para escoller os elementos do noso HTML o cal queremos aplicarlle estilos.
+
+    Seleccionadores máis importantes:
+
+        *: é o selector universal. Selecciona todos os elementos.
+        #id: selecciona os elementos da páxina web que teñen o valor do atributo id que aquí indicamos.
+        .class: selecciona os elementos da páxina web que teñen como valor do atributo class o que aquí indicamos.
+        etiqueta: selecciona esas etiquetas concretas.
+        selector1, selector2: úsase para cambiar as propiedades dos elementos da páxina web que aparecen separados polas comas.
+        selector1 selector2: úsase para cambiar as propiedades dos elementos seleccionados polo selector2 que son descendentes de selector1.
+        selector1>selector2: úsase para cambiar as propiedades dos elementos seleccionados polo selector2 que son descendentes directos de selector1.
+        selector1+selector2: utilízase para cambiar as propiedades dos elementos seleccionados polo selector2 que están inmediatamente despois
+                            dos seleccionados polo selector1 (seguinte irmán).
+        selector1~selector2: selecciona irmáns. Isto significa que o segundo elemento segue ao primeiro (non necesariamente inmediatamente)
+                            e ambos comparten o mesmo elemento pai.
+
+                            Exemplo: a regra p ~ span aplicarase a todos os elementos <span> que seguen a un elemento <p>.
+
+*/
+
+.container>p {
+    background-color: tomato;
+}
+
+.text-2+h2 {
+    background-color: tomato;
+}
+
+.text-2~.text {
+    background-color: teal;
+}
+
+/* .text,
+.text-2,
+.text-3,
+.text-4{
+    background-color: steelblue;
+} */
+
+/* *{
+    background-color: lightcoral;
+}
+
+h1{
+    background-color: lightcyan;
+}
+
+p{
+    background-color: lightgreen;
+}
+
+ul{
+    background-color: red;
+}
+
+li{
+    background-color: blue;
+} */
+
+/* #title{
+    background-color: lightgreen;
+}
+
+.title{
+    background-color: lightsalmon;
+}
+
+.text{
+    background-color: limegreen;
+} */
+
+/*[href]{
+    background-color: mediumorchid;
+}
+
+[href="https://google.com"]{
+    background-color: orangered;
+}
+
+[href^="color"]{
+    background-color: red;
+}
+
+[href*="modo"]{
+    background-color: green;
+}
+
+[href$="azul"]{
+    background-color: steelblue;
+}
+
+[lang|="en"]{
+    background-color: magenta;
+} */

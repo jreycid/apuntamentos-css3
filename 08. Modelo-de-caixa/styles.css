@@ -1,0 +1,51 @@
+/* 
+    O MODELO DE CAIXA. COMPOÑENTES
+
+        Todos e cada un dos elementos da miña web son caixas (cunha serie de compoñentes) a ollos dos navegadores.
+        Xa sexan imaxes, parágrafos, vídeos, iframes, etc., calquera dos elementos que representan algo en HTML ten a seguinte estrutura visual:
+
+        Con este modelo debemos distinguir as seguintes áreas:
+            - Contido: texto nas etiquetas do texto, imaxe nas etiquetas das imaxes, etc.
+            - Padding: espazo entre o contido e o borda da caixa.
+            - Borde: elemento que marca a división entre o elemento e o resto dos elementos da páxina.
+            - Marxe: espazo fora do borde. Espazo entre o elemento e o resto dos elementos da páxina.
+*/
+
+.contenedor {
+    background:deepskyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#caixa1 { /*A caixa ten un ancho de 400 + 2(15) + 2(5) + 2(20) = 480px */
+    background-color: #fff;
+    text-align: center;
+    width: 400px;  /* dimensións do contido  */
+    padding: 15px;  /* O padding non se pode colorear. Toma a cor do contido */
+    border: 5px solid chartreuse;
+    margin: 20px; /* A marxe non se lle pode por color. Toma a cor do elemento pai */
+    outline: 20px solid deeppink; /* Por iso definin un outline do tamaño da marxe, para que a poidérades ver */
+}
+
+/* 
+    O MODELO DE CAIXA. COMPORTAMENTO
+
+        En xeral, podemos distinguir entre dous comportamentos das caixas: poden comportarse como un bloque ou como unha liña. 
+
+        1.  As caixas que se comportan como elementos en liña, iranse colocando na mesma liña mentras sexa posíbel.
+            Cando non haxa mais sitio pasarán a apilarse na seguinte liña.
+            Non se pode cambiar nin o width nin o height dunha caixa que se comporte como un elemento de liña.
+            Solo ocupan o width que necesitan (span, a, img, etc).
+
+        2.  As caixas que se comportan como elementos en bloque ocupan todo o ancho da páxina independientemente do seu contido.
+            Comezan sempre nunha nova liña e ocupan toda a liña ainda que non a necesiten (h1...h6, div, p, header, footer, etc).
+
+        Para mais detalles podes consultar:
+
+        Resumen_HTML5_y_CSS3.pdf
+        https://developer.mozilla.org/es/docs/orphaned/Web/HTML/Inline_elements
+        https://developer.mozilla.org/es/docs/Glossary/Block-level_content
+        https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model
+    */

@@ -1,0 +1,23 @@
+/*
+    HERDANZA CSS
+
+    É o mecanismo polo cal as propiedades CSS se aplican non só a un só elemento, senón tamén aos seus descendentes.
+    Baséase no feito de que os elementos dun documento XHTML están dispostos xerarquicamente.
+    
+    Non todas as propiedades se herdan:
+    
+        - As relacionadas co texto herdanse: a cor, o tipo de letra, aliñamento, sangría, visibilidade, etc.
+        - As relacionadas coa caixa non: o fondo, os bordos, a posición, as marxes, o recheo, o índice z, etc.
+        
+    Beneficios da herdanza en CSS:
+    
+        - herdanza evita a redundancia do código, permitindo aos deseñadores escribir menos código CSS.
+        - Disminúe os tempos de carga dos sitios web para os usuarios.
+*/
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif; /*Intenta aplicar Segoe UI, se non a atopa pasa a seguiente, etc.*/
+    color: blueviolet;
+}
+div {
+    border: 2px solid black;
+}

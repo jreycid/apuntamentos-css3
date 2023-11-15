@@ -1,0 +1,36 @@
+<!-- 
+    A propiedade position permítenos posicionar os elementos dun documento html.
+    
+    Hai algúns conceptos que debes coñecer para entender a posición.
+    
+        Fluxo de renderizado -> Como regra xeral, os elementos son debuxados de esquerda a dereita e de arriba a abaixo.
+                                O punto 0,0 dos elementos, como regra xeral, é a esquina superior esquerda.
+
+        Espazo reservado -> É o espazo que un elemento ten asignado no navegador.
+
+        ViewPort -> En termos de navegador web, refírese á parte do documento que está actualmente visible na xanela.
+                    O contido fóra do viewport non é visible ata que se move a ela, normalmente facendo scroll.
+
+        Elemento posicionado -> Isto significa que o elemento ten a propiedade de posición cun valor distinto de static,
+                                que é o valor que ten esta propiedade por defecto.
+
+    Stacking context -> Contexto de apilamiento. É a orde na que se apilarán as caixas superpostas, dentro do mesmo recipiente.
+                        https://developer.mozilla.org/es/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context
+
+    Para posicionar un elemento, dispoñemos de 5 propiedades que nos permitirán mover os elementos nos 3 eixes.
+
+        top -> O elemento moverase desde arriba a distancia que indicamos.
+
+        right -> O elemento moverase desde o lado dereito a distancia que indicamos.
+
+        bottom -> O elemento moverase desde abaixo a distancia que indicamos.
+
+        left -> O elemento moverase desde o lado esquerdo a distancia que indicamos.
+
+        z-index -> Permítenos mover o elemento no contexto de apilamiento.
+                    Dito doutra maneira, é a propiedade que nos permite ordenar que eltos se colocan diante e cales detrás.
+
+        NOTA: Se declaramos a propiedade superior e/ou esquerda dun elemento, as propiedades inferior e/ou dereita non funcionarán.
+
+    Os posibles valores que podemos dar a posición son: static, relative, absolute, fixed e sticky.
+-->
