@@ -1,0 +1,106 @@
+/* 
+    CORES EN CSS
+
+    Temos varias formas de dar color en CSS
+
+    Keywords -> Palabras clave que representan cores https://www.w3.org/wiki/CSS/Properties/color/keywords
+    
+    IMPORTANTE:
+      Existe a cor "transparent"
+      CurrentColor: É unha palabra clave que se pode usar en lugar de calquera valor de cor e usará o valor definido ou herdado na propiedade da cor.
+
+    RGB/RGBA
+      No modo RGB temos tres canles (Red, Green, Blue) e temos 8 bits de cor por canle, o que significa que temos 2^8 posibles valores (desde 0 hasta 255).
+      
+      Esto danos un total de 255 * 255 * 255 = 16.581.375 cores.
+
+      A sintaxe é rgb(R,G,B)
+
+      Si pomos todos os canles a 0 obteremos a cor negra.
+      Si pomos todos os canles a 255 obteremos a cor branca.
+      Si pomos todos os canles a 128 obteremos a cor gris.
+
+      Tamén temos a opción de empregar unha cuarta canle para manexar a transparencia da cor.
+      O seu rango vai de 0 (máxima transparencia) a 1 (máxima opacidade).
+      
+        rgba(R,G,B,A)
+        rgb(R G B / A)
+
+    HEXADCIMAL
+      A notación hexadecimal é moi común en desenvolvemento web, easéase nos mesmos principios que o RGB pero escrito en notación hexadecimal.
+      Polo tanto, nesta notacíon tamén necesitamos reprenentar 256 valores por canle, de ahí que cada canle se represente con 2 díxitos en formato hexadecimal,
+      xa que 16*16 = 256
+
+      0 1 2 3 4 5 6 7 8 9 A B C D E F
+      0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+      Para indicar que imnos empregar a notación hexadecimal debemos usar o símbolo de hash/almohadilla #
+      e a continuación unha parella de díxitos en hexadecimal por canle.
+
+        #RRGGBB
+
+      Tamén temos a opción de usar transparencias en hexadecimal engadindo un cuarto canle.
+
+    HSL / HSLA
+      É o modo de co más intuitivo para os humanos.
+      O seu nome ven das siglas Hue (tono) Saturation (saturación) y Lightness (luminosidade)
+      
+      O primero valor é o ángulo no círculo cromático donde 0 y 360 será a cor vermella.
+      Hai certos valores que nos pueden servir como referencia para relacionar mellor as cores cos seus ángulos.
+        0 -> vermello
+        60 -> amarelo
+        120 -> verde
+        180 -> cyan
+        240 -> azul
+        300 -> magenta
+
+      O segundo valor é a saturación ou intensidade da cor.
+        0% -> gris
+        100% -> color puro
+
+      O terceiro valor é a luminosidade da cor.
+        0% -> negro, nada de luz
+        100% -> blanco, luz máxima
+
+      Nota: É importante que ainda que o valor de saturación ou luminosidade sexa 0 hay que por 0% si non, non funcionará.
+
+      O modo HSL tamén admite transparencia e a súa sintaxe é a mesma que a do modo RGB:
+        hsla(h,s,l,a)
+        hsl(h s l / a)
+      Nos dous casos o valor alpha (transparencia) vai de 0 a 1.
+
+      http://w3.unpocodetodo.info/css3/hsl.php
+
+*/
+body {
+  background-color: lightslategray;
+  /* background-color: hsla(60 100% 50% / 0.5); */
+}
+
+.box {
+  /* border-top: 500px solid red;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent; */
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* background-color: rgb(0 0 0 / 0.3); */
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
+  box-shadow: 5px 5px 10px #0004;
+  box-shadow: 5px 5px 10px hsl(180 50% 50%);
+}
+
+h1 {
+    /* Para indicar cor */
+    color: rgb(0 0 0);
+    /* Para indicar cor e transparencia */
+  color: rgb(0 0 0 /80%);
+    /* Os dous últimos díxitos indican transparencia (rango de 00 a ff) */
+  color: #0099ff00;
+  color: lightgreen;
+}
+
+em {
+  color: currentColor;
+}

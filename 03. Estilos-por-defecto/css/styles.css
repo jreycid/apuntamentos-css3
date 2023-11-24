@@ -1,0 +1,28 @@
+/* 
+    Imos ver como usar normalize CSS e que beneficios ten o seu uso para a nosa web.
+
+    Normalize CCS é unha folla de estilo en cascada que seinclúe antes do noso css,
+    e ten como función minimizar as múltiples diferenzas visuais que se producen
+    ao mostrar a mesma páxina web en diferentes navegadores. Isto debido a que cada navegador
+    implementa o seu propio estilo interno, con certos valores predeterminados.
+
+    É dicir, o seu maior uso é facer que o noso sitio web se vexa igual en todos os navegadores.
+
+    A diferenza con reset.css é que reset restablece todas as propiedades,
+    mentres que normalize busca axustar e nivelar os cambios para manter a homoxeneidade.
+
+    Como puntos negativos nomear que:
+        - Da soporte a moitos navegadores que non usaremos.
+        - Algunhas bibliotecas como Bootstrap xa teñen instalado Normalize por defecto. 
+        - Inclúe algúns estilos por defecto, que xa se aplican igual en todos os navegadores.
+
+        Podes descargar a plantilla no seguinte enlace:
+
+        https://github.com/necolas/normalize.css
+*/
+
+body{
+    margin: 10px;
+    background-color: lightslategray;
+    color: #fff;
+}

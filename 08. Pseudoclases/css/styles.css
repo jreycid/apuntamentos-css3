@@ -1,0 +1,28 @@
+/* 
+    PSEUDO-CLASSES 
+
+    Unha pseudoclase CSS é unha palabra clave engadida aos selectores que especifica un estado especial do elemento seleccionado.
+
+    https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+*/
+
+.link:hover { /*A pseudo-clase :hover permitenos especificar o aspecto do elemento sobre o que se atopa o cursor. */
+    font-weight: bold;
+}
+
+.link:link {  /*A pseudo-clase :visited permitenos especificar o aspecto dun enlace non visitado. */
+    background-color: pink;
+}
+
+.link:visited { /*A pseudo-clase :visited permitenos especificar o aspecto dun enlace visitado. */
+    background-color:bisque;
+}
+
+.link:active { /*A pseudo-clase :active permitenos especificar o aspecto do elemento xusto no momento do clic. */
+    border: 3px solid black;
+}
+
+ol>li:last-child { /* Solo afectará o último elemento da lista */
+    color: cornflowerblue;
+    font-weight: bold;
+}

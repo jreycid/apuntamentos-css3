@@ -1,0 +1,38 @@
+/* 
+  Ordenar as propiedades é importante.
+  Ainda que non existe ninguna especificación formal sobre como facelo,
+  a maioría de expertos coinciden en los mismos puntos.
+
+  1 - Propiedades de posicionamento
+  2 - Propiedades do modelo de caixa
+  3 - Propiedades do texto
+  4 - Propiedades visuais (cores, bordes, background...)
+  5 - O resto
+*/
+
+body {
+  /* Position */
+  position: relative;
+  top: 0;
+  left: 0;
+
+  /* Box model */
+  display: block;
+  width: 300px;
+  height: 600px;
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+
+  /* Text */
+  font-size: 16px;
+  text-align: center;
+
+  /* Visual */
+  color: blue;
+  border: 2px solid red;
+  border-radius: 10px;
+
+  /* Varios */
+  opacity: 1;
+}

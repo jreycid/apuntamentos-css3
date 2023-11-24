@@ -1,0 +1,73 @@
+    /* 
+        PROPIEDADE DISPLAY
+
+            A propiedade display axúdanos a cambiar o contexto dos elementos dentro do navegador
+
+            Admite varios valores
+                en liña -> Fai que o elemento sexa de liña.
+                inline-block -> Fai que o elemento sexa de liña pero admite medidas e marxes verticais.
+                block -> Fai que o elemento sexa de bloque.
+                none -> Fai que o elemento non se mostre, pero segue cargándose, relentiza a carga da páxina.
+
+            Tamén serían valores de display: frex e grid. Estas dúas tratarémolas mais adiante de forma independiente.
+
+            Observa cal é a diferencia entre empregar display:none e empregar visibility:hidden
+    */
+
+    body {
+        background-color: grey;
+    }
+
+    h1 {
+        text-align: center;
+        color: antiquewhite;
+    }
+
+    .contenedor {
+        margin: auto;
+        /* Para centar os eltos con comportamento de bloque */
+        width: 700px;
+        height: 700px;
+		background-color: #f1f5f9;
+        border: 2px solid black;
+    }
+
+    div,
+    span {
+        width: 175px;
+        height: 175px;
+    }
+
+    .span1 {
+        background: darksalmon;
+        display: inline;
+        /* O seu valor por defecto */
+    }
+
+    .span2 {
+        background: yellow;
+        display: inline-block;
+        visibility: hidden;
+
+    }
+
+    .span3 {
+        background: deepskyblue;
+        display: inline-block;
+    }
+
+    .span4 {
+        background: plum;
+        display: block;
+    }
+
+    .div1 {
+        background: sandybrown;
+        display: none;
+    }
+
+    .div2 {
+        background:aquamarine;
+        display: block;
+        /* O seu valor por defecto */
+    }

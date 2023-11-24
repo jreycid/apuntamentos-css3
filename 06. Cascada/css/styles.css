@@ -1,0 +1,19 @@
+/*
+    CASCADA CSS
+
+    Lembra que os estilos en css aplícanse en cascada.
+    A cascada css é o algoritmo mediante o cal o navegador decide en que orde aplica os estilos a un elemento.
+
+    É un tema mais complexo do que o vamos a tratar nos deste módulo, xa que o navegador para decidir a prioridade
+    de dous estilos que entren en conflicto para un elemento, ten en conta varios criterios:
+
+        1. A importantcia dos estilos (busca info sobre a declaración !important. Por qué non debes abusar dela?).
+        2. Orixe (busca información sobre os CSS de autor, usuario e navegador. Cal é a orde de prioridade?).
+        3. Especificidade (un selector que referencia a un id ten mais prioridade que un que referencie a clase, por exemplo).
+        4. Orden de aparición (na declaración do h1 que fixen arriba tes un exemplo claro coa cor).
+
+    No caso de conflictos, o mecanismo simplificado que se aplica é o seguinte:
+
+        - Canto máis específico sexa un selector, máis importancia ten a súa regra asociada.
+        - Coa mesma especificidade, aplicarase a última regra indicada.
+*/

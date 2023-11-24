@@ -1,0 +1,72 @@
+/*
+
+    SELECTORES
+
+    Os selectores son regras ou patróns que empregaremos para escoller os elementos do noso HTML o cal queremos aplicarlle estilos.
+
+    Seleccionadores máis importantes:
+
+        *: é o selector universal. Selecciona todos os elementos.
+        #id: selecciona o elemento da páxina web que teñan o valor do atributo id que aquí indicamos.
+        .class: selecciona os elementos da páxina web que teñen como valor do atributo class o que aquí indicamos.
+        etiqueta: selecciona esas etiquetas concretas.
+        selector1, selector2: úsase para cambiar as propiedades dos elementos da páxina web que aparecen separados polas comas.
+        selector1 selector2: úsase para cambiar as propiedades dos elementos seleccionados polo selector2 que son descendentes de selector1.
+        selector1>selector2: úsase para cambiar as propiedades dos elementos seleccionados polo selector2 que son descendentes directos de selector1.
+        selector1+selector2: utilízase para cambiar as propiedades dos elementos seleccionados polo selector2 que están inmediatamente despois
+                            dos seleccionados polo selector1 (seguinte irmán).
+        selector1~selector2: selecciona irmáns. Isto significa que o segundo elemento segue ao primeiro (non necesariamente inmediatamente)
+                            e ambos comparten o mesmo elemento pai.
+
+                            Exemplo: a regra p ~ span aplicarase a todos os elementos <span> que seguen a un elemento <p>.
+*/
+
+* {
+    padding: 1px;
+}
+
+h1 {
+    background-color: lightslategrey;
+    color: white;
+}
+
+body>h2 {
+    background-color: lightgreen;
+}
+
+.container p {
+    background-color: lightpink;
+}
+
+.text-2+h3 {
+    background-color: lightskyblue;
+}
+
+.text-2~.text {
+    background-color: greenyellow;
+}
+
+p {
+    background-color: lightseagreen;
+}
+
+#lorem {
+    background-color: lightyellow;
+}
+
+[href]{
+    background-color: dodgerblue;
+    color: whitesmoke;
+}
+
+[href="https://academia.gal"]{
+    background-color: darkgoldenrod;
+}
+
+[href*="wikipedia"]{
+    background-color: green;
+}
+
+[href^="https://google"]{
+    background-color:red;
+}

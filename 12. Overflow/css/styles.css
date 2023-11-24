@@ -1,0 +1,72 @@
+/*
+    OVERFLOW
+
+        1. É a propiedade que emprgamos para controlar o desbordamento das caixas.
+        2. Dicimos que un contido desborda cando a caixa é máis pequena que o recipiente.
+        3. É unha abreviatura (un shorthand, como margin, border ou background) que engloba overflow-x e overflow-y
+
+        Ten catro valores posibles:
+            visible -> É o valor predeterminado.
+            hidden -> Non se verá contido desbordado. Se aplicamos esta propiedade só a un eixe, o outro establecerase automaticamente co valor de desprazamento.
+            scroll -> As barras de desprazamento aparecerán no eixe asignado (x, y ou ambos)
+            auto -> Aparecerán barras de desprazamento se son necesarias.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.contenedor {
+    margin: 25px;
+    /* top e bottom | left e right */
+    background-color: deepskyblue;
+    height: 450px;
+    color: #000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4 {
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    background-color: thistle;
+    border: 1px solid blueviolet;
+}
+
+.caixa1 {
+    /* É o default */
+    overflow: visible;
+}
+
+.caixa2 {
+    overflow: hidden;
+}
+
+.caixa3 {
+    overflow: scroll;
+}
+
+.caixa4 {
+    overflow: auto;
+}
+
+.text {
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    /* width: 250px; Para forzar desbordamentos horizontais */
+}
