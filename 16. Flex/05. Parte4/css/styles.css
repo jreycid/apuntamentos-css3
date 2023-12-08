@@ -1,0 +1,136 @@
+/*  
+    ALINEACIÓN DOS ELEMENTOS FLEXIBLES NO EIXE TRANSVERSAL
+
+        A propiedade align-items define a disposición dos elementos ao longo do eixe transversal (perpendicular ao eixe principal).
+
+            align-items: flex-start;
+            align-items: flex-end; 
+            align-items: center; 
+            align-items: stretch;
+            align-items: baseline;
+
+        A propiedade align-self indica o aliñamento dun elemento dentro do bloque que o contén,
+        sustituindo o valor de align-items soamente para o elemento en concreto.
+
+            align-self: auto;
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+            align-self: baseline;
+            align-self: stretch;
+
+        Para mais información consulta os apuntamentos en pdf ou o seguintes enlaces:
+
+        https://developer.mozilla.org/es/docs/Web/CSS/align-items
+        https://css-tricks.com/almanac/properties/a/align-items/
+        https://developer.mozilla.org/es/docs/Web/CSS/align-self
+        https://css-tricks.com/almanac/properties/a/align-self/
+
+*/
+
+h3 {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.box {
+    border: 1px black solid;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.box-1, .box-6 {
+    /* valor por defecto */
+    align-items: flex-start;
+}
+
+.box-2 {
+    align-items: flex-end;
+}
+
+.box-3 {
+    align-items: center;
+}
+
+.box-4 {
+    align-items: stretch;
+}
+
+.box-5 {
+    align-items: baseline;
+}
+
+.item {
+    opacity: 0.9;
+    padding: 10px;
+    width: 55px;
+}
+
+.item1 {
+    background-color: lightcoral;
+    height: 20px;
+}
+
+.item2 {
+    background-color: lightskyblue;
+    height: 80px;
+}
+
+.item3 {
+    background-color: lightgreen;
+    height: 55px;
+}
+
+.item4 {
+    background-color: lightseagreen;
+    height: 125px;
+}
+
+.item5 {
+    background-color:lightseagreen;;
+    align-self: flex-end;
+}
+
+.stretch1 {
+    background-color: lightcoral;
+}
+
+.stretch2 {
+    background-color: lightskyblue;
+}
+
+.stretch3 {
+    background-color: lightgreen;
+}
+
+.stretch4 {
+    background-color: lightseagreen;
+}
+
+.baseline1 {
+    font-size: 2em;
+}
+
+.baseline2 {
+    font-size: 6em;
+}
+
+.baseline3 {
+    font-size: 1em;
+}
+
+.baseline4 {
+    font-size: 3em;
+}
