@@ -1,0 +1,112 @@
+/*  
+    DIRECCIÓN DOS ELEMNTOS FLEXIBLES E DESBORDAMENTO
+
+        A propiedade display: flex ou display: inline-flex é de uso obrigatorio no contenedor.
+
+        A propiedade flex-direction especifica como colocar os elementos flexibles no contenedor flex
+        definindo o eixe principal e a dirección (normal ou inversa):
+
+            flex-direction: row;
+            flex-direction: row-reverse; 
+            flex-direction: column; 
+            flex-direction: column-reverse;
+
+        A propiedade flex-wrap especifica se os elementos flexibles están obrigados a permanecer na mesma liña
+        ou poden fluír a través de varias liñas. Se se permite o cambio de liña, esta propiedade tamén permite
+        controlar a dirección na que se apilarán os elementos:
+
+            flex-wrap: nowrap;
+            flex-wrap: wrap; 
+            flex-wrap: wrap-reverse;
+
+        A propiedade flex-flow é unha propiedade de atallo para as propiedades flex-direction e flex-wrap:
+
+            flex-direction -> establece eje principal
+            flex-wrap -> crea contenedor multilínea
+
+        Para mais información consulta os apuntamentos en pdf ou o seguintes enlaces:
+        https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+        https://developer.mozilla.org/es/docs/Web/CSS/flex-direction
+        https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap
+        https://developer.mozilla.org/es/docs/Web/CSS/flex-flow
+        https://github.com/eludadev/css-docs
+*/
+
+.item {
+    opacity: .9;
+    width: 100px;
+    height: 100px;
+    font-weight: bolder;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-flex1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contenedor-flex2 {
+    display: flex;
+    border: 1px black solid;
+    margin: 20px;
+}
+
+.contenedor-flex3 {
+    display: inline-flex;
+    border: 1px black solid;
+    margin: 20px;
+}
+
+.box {
+    margin: 20px;
+    border: 1px black solid;
+    display: flex;
+    width: 300px;
+    /* height: 100px; */
+}
+
+.box-1 {
+    /* valor por defecto */
+    flex-direction: row;
+    /* valor por defecto */
+    flex-wrap: nowrap;
+}
+
+.box-2 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 350px;
+}
+
+.box-3 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.box-4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-5 {
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.item:nth-child(1) {
+    background-color: lightcoral;
+}
+
+.item:nth-child(2) {
+    background-color: lightskyblue;
+}
+
+.item:nth-child(3) {
+    background-color: lightgreen;
+}
+
+.item:nth-child(4) {
+    background-color: lightseagreen;
+}

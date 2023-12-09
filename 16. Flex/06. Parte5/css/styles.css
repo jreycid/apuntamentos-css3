@@ -1,0 +1,119 @@
+/*  
+    PROPIEDADES DOS ITEMS FLEXIBLES
+
+        - flex-grow: define o factor de crecemento dun elemento flexible, se é necesario.
+                    Acepta un valor sen unidades que serve de proporción.
+                    Os elementos flexibles crecerán para encher o contenedor flexible segundo este parámetro,
+                    cando o tamaño predeterminado dos elementos flexibles sexa menor que o do seu recipiente flexible.
+
+        - flex-shrink: especifica o factor de contracción dun elemento flexible, se é necesario.
+                    Acepta un valor sen unidades que serve de proporción.
+                    Os elementos flexibles encolleranse para encher o contenedor flexible segundo este parámetro,
+                    cando o tamaño predeterminado dos elementos flexibles sexa maior que o do seu recipiente flexible.
+
+        - flex-basis: This defines the default size of an element before the remaining space is distributed.
+                    It can be a length (e.g. 20%, 5rem, etc.) or a keyword.
+                    The auto keyword means "look at my width or height property.
+
+        Os valores por defecto destas propiedades son:
+
+            flex-grow: 0 : os elementos non crecen.
+            flex-shrink: 1 : os elementos poden encollerse máis pequenos que o seu flex-basis.
+            flex-basis: auto : os elementos teñen un tamaño base de auto.
+
+            Existe un shorthand para estas 3 propiedades chamado flex.
+
+            Para mais información consulta os apuntamentos en pdf ou o seguintes enlaces:
+
+                https://css-tricks.com/almanac/properties/f/flex-grow/
+                https://developer.mozilla.org/es/docs/Web/CSS/flex-grow
+
+                https://css-tricks.com/almanac/properties/f/flex-shrink/
+                https://developer.mozilla.org/es/docs/Web/CSS/flex-shrink
+
+                https://css-tricks.com/almanac/properties/f/flex-basis/
+                https://developer.mozilla.org/es/docs/Web/CSS/flex-basis
+
+                https://developer.mozilla.org/es/docs/Web/CSS/flex
+
+*/
+
+.contenedor-flex {
+    margin: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px black solid;
+}
+
+div[class^='item']{
+    font-weight: bolder;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-grow {
+    opacity: .9;
+    width: 100px;
+    height: 100px;
+}
+
+.item-grow:nth-child(1) {
+    flex-grow: 1;
+}
+
+.item-grow:nth-child(3) {
+    flex-grow: 2;
+}
+
+.item-shrink {
+    opacity: .9;
+    width: 200px;
+    height: 100px;
+}
+
+.item-shrink:nth-child(1) {
+    flex-shrink: 3;
+}
+
+.item-shrink:nth-child(3) {
+    flex-shrink: 2;
+}
+
+.item-basis {
+    opacity: .9;
+    height: 100px;
+}
+
+.item-basis:nth-child(1) {
+    flex-basis:5%;
+}
+
+.item-basis:nth-child(2) {
+    flex-basis:25%;
+}
+
+.item-basis:nth-child(3) {
+    flex-basis:10%;
+}
+
+.item-basis:nth-child(4) {
+    flex-basis:60%;      
+}
+
+.item:nth-child(1) {
+    background-color: lightcoral;
+}
+
+.item:nth-child(2) {
+    background-color: lightskyblue;
+}
+
+.item:nth-child(3) {
+    background-color: lightgreen;
+}
+
+.item:nth-child(4) {
+    background-color: lightseagreen;
+}

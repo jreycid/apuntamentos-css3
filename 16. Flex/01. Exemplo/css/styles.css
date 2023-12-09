@@ -1,0 +1,61 @@
+/* centramos o texto dos títulos */
+h2,
+h3 {
+    text-align: center;
+}
+
+.contenedor-flex {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.elemento-flex {
+    padding: 10px;
+    width: 100px;
+    /* flex-grow: 1; todos crecen na mesma proporción ata ocupar o 100% do contenedor */
+}
+
+.elemento-flex:nth-child(1) {
+    background-color: lightgray;
+    /* order: 3; */
+    /* align-self: flex-end; */
+}
+
+.elemento-flex:nth-child(2) {
+    background-color: lightcoral;
+    /* order: 1; */
+    /* flex-grow: 4; */
+}
+
+.elemento-flex:nth-child(3) {
+    background-color: lightgreen;
+    /* order: -1;  */
+    /* flex: 0 0 90%; */
+}
+
+.elemento-flex:nth-child(4) {
+    background-color: aquamarine;
+}
+
+.elemento-flex:nth-child(5) {
+    background-color: cornflowerblue;
+}
+
+.elemento-flex:nth-child(6) {
+    background-color: lightskyblue;
+}
+
+.elemento-flex:nth-child(7) {
+    background-color: cornsilk;
+}
+
+.elemento-flex:nth-child(8) {
+    background-color: darksalmon;
+}
+
+.elemento-flex:nth-child(9) {
+    background-color: lightseagreen;
+}
