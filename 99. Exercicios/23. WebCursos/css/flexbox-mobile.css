@@ -1,0 +1,134 @@
+
+@media (max-width:768px) {   
+
+/*Parte Header*/
+
+.headerPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+}
+
+.headerPrincipal-nav {
+    flex-direction: column;
+}
+
+/*Parte Cursos*/
+
+.container .subtitulo{
+align-items: center;
+
+}
+
+.contenidoPrincipal-cursos-link {
+
+    width: 100%;
+    margin:auto;
+    margin-top: 1%;
+}
+
+.videoSobre .container {
+    display: block;
+
+}
+
+.videoSobre-video {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.videoSobre .container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.videoSobre-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.videoSobre-button {
+  margin-top: 2%;
+}
+
+.rodapePrincipal-navMap-list {
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+
+}
+.rodapePrincipal-patrocinadores-list {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+  display: block;
+    margin-top: 2%;
+}
+
+.rodapePrincipal .container {
+    display: block;
+    justify-items: center;
+    /* margin: auto; */
+}
+<<<<<<< HEAD
+=======
+.rodapePrincipal-patrocinadores-list {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+.rodapePrincipal-patrocinadores-list-link{
+    width: 30%;
+}
+
+.rodapePrincipal-contatoForm-emailInput{
+    display: block;
+    width: 100%;
+}
+
+.rodapePrincipal-contatoForm-submit {
+    display: block;
+
+}
+>>>>>>> 665aca1c3a33751d5105e0c9b43babba4f04be27
+
+
+
+.rodapePrincipal-contatoForm-emailInput {
+  padding: 5% 40% 5% 40%;
+  width: 100%;
+  margin: auto;
+}
+
+.rodapePrincipal-contatoForm-submit {
+  margin-top: 3%;
+  padding: 5% 35% 5% 35%;
+  border: 2px;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+.headerPrincipal-nav-link-app{
+    order:-1;
+}
+
+
+
+}
+=======
+}
+>>>>>>> 665aca1c3a33751d5105e0c9b43babba4f04be27
+=======
+}
+>>>>>>> 665aca1c3a33751d5105e0c9b43babba4f04be27

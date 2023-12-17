@@ -1,0 +1,71 @@
+.flag {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  flex: 7;
+}
+
+.bottom {
+  display: flex;
+  flex: 6;
+}
+
+.box {
+  flex: 0;
+  flex-basis: 700px;
+  background: #325f92;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.star-row {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-row.odd {
+  padding: 0 9.5%;
+}
+
+.star {
+  height: 5.55556vh;
+  flex: 0;
+  flex-basis: 50px;
+  margin: 0 0%;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/211696/star.svg") no-repeat center;
+}
+
+.star-svg {
+  fill: #fff;
+  width: 100%;
+  height: 10px;
+}
+
+.stripes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stripe {
+  background: #c53939;
+  flex: 1;
+}
+
+.stripe:nth-child(even) {
+  background: white;
+}
+
+.bottom .stripe:nth-child(odd) {
+  background: white;
+}
+
+.bottom .stripe:nth-child(even) {
+  background: #c53939;
+}

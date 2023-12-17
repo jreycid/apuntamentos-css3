@@ -1,0 +1,132 @@
+body{
+    background-color: #141414;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#container{
+    /*  */
+    margin: auto;
+    width: 96vw;
+    height: 100vh;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 7fr 4fr;
+    width: 100%;
+    height: 13vh;
+    /* background-color: bisque; */
+}
+#logo{
+    grid-column: 1;
+    width: 1vw;
+    /* background-color: crimson; */
+    /* display: flex;
+    justify-content: center; */
+}
+#navegacion{
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    /* background-color: fuchsia; */
+}
+#usuario{
+    grid-column: 3;
+    float: right;
+    right: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: forestgreen; */
+}
+#content{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vh;
+    /* background-color: blueviolet; */
+}
+.series_container{
+    width: 100%;
+    height: 26vh;
+    grid-row: auto;
+   /*  background-color: brown; */
+    
+}
+.title_series{
+    width: 100%;
+    height: 4vh;
+    /* background-color: chartreuse; */
+}
+.series{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 22vh;
+}
+.series .center_div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 22vh;
+    /* background-color: antiquewhite; */
+    grid-column: 1;
+    gap: 0.50vw;
+}
+.image_container{
+    width: 100%;
+    height: 22vh;
+
+}
+.series img{
+    width: 100%;
+    height: 22vh;
+    border-radius: 0.30vw;
+}
+h2{
+    color: white;
+    margin: 0;
+    font-size: 1vw;
+}
+ul{
+    /* margin-top: 1.5vw; */
+    top: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+li{
+    font-size: 0.90vw;
+    margin-left: 2vw;
+    color: white;
+}
+#actual{
+    font-weight: 600;
+}
+#logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+#logo img{
+    
+    width: 6vw ;
+    height: 8vh;
+}
+.invert{
+    filter: invert(1);
+}
+.icons_user img{
+    height:10px;
+    height: 4vh;
+}
+.icons_container{
+    float: right;
+}
+.user img{
+    border-radius: 10px;
+}
