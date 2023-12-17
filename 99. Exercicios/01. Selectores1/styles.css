@@ -1,0 +1,41 @@
+/* Esta tarefa consiste en completar o seguinte código CSS para conseguir que aparezan de cor azul os elementos indicados nos comentarios. */
+
+/* Todos os parágrafos da páxina */
+
+{ color: blue; }
+
+/* Todos os parágrafos da páxina da clase "especial"*/
+
+{ color: blue; }
+
+/* Todas as cabeceiras dos tres primeiros niveis da páxina */
+
+{ color: blue; }
+
+/* Todos os elementos da clase "destacada" */
+
+{ color: blue; }
+
+/* Todos os parágrafos da páxina e os elementos strong da clase "destacada"*/
+
+{ color: blue; }
+
+/* Todos os parágrafos da páxina e os elementos da clase "destacada"*/
+
+{ color: blue; }
+
+/*As ligazóns visitadas*/
+
+{ color: blue; }
+
+/*A ligazón activa*/
+
+{ color: blue; }
+
+/*As ligazóns non visitadas*/
+
+{ color: blue; }
+
+/*A ligazón sobre a que o usuario coloca o punteiro do rato*/
+
+{ color: blue; }

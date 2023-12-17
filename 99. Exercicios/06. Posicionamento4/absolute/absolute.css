@@ -1,0 +1,18 @@
+body {
+  overflow-x: hidden;
+  background-color: beige;
+}
+
+.container {
+  position: relative;
+  border: 1px black solid;;
+}
+
+.item-1 {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  /* bottom: 0px; */
+  /* left: 0px; */
+  z-index: -1;
+}

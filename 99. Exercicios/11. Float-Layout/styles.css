@@ -1,0 +1,55 @@
+html, body, div, h1, h3, li, p{
+	margin: 0 auto;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrap {
+	width:1200px;
+	margin: 35px auto;		
+}
+
+body{
+	background-image: url(img/petroglifo_Galiza.jpg);
+	background-color: transparent;
+	background-size: contain;
+}
+
+p{ 
+	margin-top:15px;
+	line-height:1.75em;
+	text-align: justify;
+}
+
+iframe{
+	margin-top:10px;
+}
+
+section{
+	float: right;
+	margin-left:10px;
+	width:784px;
+	height: 660px;
+}
+
+aside{
+	float:left;
+	width:325px;
+	height:660px;
+}
+
+ footer{
+	float:left;
+}
+
+header, section, aside, footer{
+	margin-top:20px;
+	padding: 10px;
+	border: 10px double #999999; 
+	background-color: lightskyblue;
+}
+
+header, footer{
+	color:crimson;
+	text-align: center;
+	width:1160px;
+}

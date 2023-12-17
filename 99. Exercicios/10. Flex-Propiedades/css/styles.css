@@ -1,0 +1,166 @@
+body {
+    background-color: whitesmoke;
+    margin: auto 100px;
+}
+
+h1,
+.flex-item {
+    text-align: center;
+}
+
+.flex-box {
+    padding: 5px;
+    width: 1600px;
+    height: 300px;
+    background: linear-gradient(cornflowerblue, deepskyblue);
+    border: 4px solid whitesmoke;
+    /* eixeX eixeY desenfoque cor */
+    box-shadow: 20px 20px 40px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-item {
+    width: 200px;
+    height: 200px;
+    border: 1px black solid;
+    /* border-radius: 50%; */
+    background-color: whitesmoke;
+    color: black;
+}
+
+.flex-item:nth-child(2) {
+    background-color: lightgreen;
+}
+
+.flex-item:nth-child(3) {
+    background-color: lightpink;
+}
+
+.flex-item:nth-child(4) {
+    background-color: lightskyblue;
+    flex: 0 1 90%;
+}
+
+/* Apartado A
+
+.flex-box {
+    flex-direction: row;
+    justify-content: flex-start;
+}*/
+
+/* Apartado B
+
+.flex-box {
+    flex-direction: row-reverse;
+
+}*/
+
+/* Apartado C
+
+.flex-box {
+    justify-content: center;
+    flex-direction: row;
+}*/
+
+/* Apartado D
+
+.flex-box {
+    justify-content: space-between;
+}*/
+
+/* Apartado E
+
+.flex-box {
+    flex-direction: column;
+}*/
+
+/* Apartado F
+
+.flex-box {
+    flex-direction: column-reverse;
+}*/
+
+/* Apartado G
+
+.flex-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}*/
+
+/* Apartado H
+
+.flex-box {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+}*/
+
+/* Apartado I   (hai que eliminar a altura dos flex-item)
+
+.flex-box {
+    flex-direction: row;
+    align-items: stretch;
+}*/
+
+/* Apartado J
+
+.flex-box {
+    align-items: flex-end;
+}*/
+
+/* Apartado K
+
+.flex-box {
+    align-items: center;
+}*/
+
+/* Apartado L
+
+.flex-box {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}*/
+
+/* Apartado M
+
+.flex-box {
+    flex-wrap: nowrap;
+}*/
+
+/* Apartado N
+
+.flex-item:nth-child(2) {
+    background-color: lightgreen;
+    order: -1;
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(3) {
+    background-color: lightpink;
+    order: 1;
+    align-self: center;
+}*/
+
+/* Apartado O
+
+.flex-item:nth-child(2) {
+    background-color: lightgreen;
+    flex-grow: 2;
+}
+
+.flex-item:nth-child(3) {
+    background-color: lightpink;
+    flex-grow: 3;
+}
+
+.flex-item:nth-child(4) {
+    background-color: lightskyblue;
+    flex-grow: 4;
+}*/

@@ -1,0 +1,37 @@
+p {
+    text-align: center;
+    color: azure;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+}
+
+.top-left {
+    background-color: #aed6f1;
+}
+
+.top-center {
+    background-color: #85c1e9;
+}
+
+.top-right {
+    background-color: #5dade2;
+}
+
+.center {
+    background-color: #3498db;
+}
+
+.bottom-left {
+    background-color: #2874a6;
+}
+
+.bottom-center {
+    background-color: #21618c;
+}
+
+.bottom-right {
+    background-color: #1b4f72;
+}
